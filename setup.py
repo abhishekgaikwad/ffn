@@ -10,11 +10,7 @@ def local_file(filename):
     )
 
 
-version = re.search(
-    "^__version__ = \((\d+), (\d+), (\d+)\)$",
-    local_file('ffn/__init__.py').read(),
-    re.MULTILINE
-).groups()
+version = (0, 3, 2)
 
 
 setuptools.setup(
